@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 100" style="enable-background:new 0 0 200 100;" xml:space="preserve">
+<style type="text/css">
+	.Drop_x0020_Shadow{fill:none;}
+	.Round_x0020_Corners_x0020_2_x0020_pt{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.Live_x0020_Reflect_x0020_X{fill:none;}
+	.Bevel_x0020_Soft{fill:url(#SVGID_1_);}
+	.Dusk{fill:#FFFFFF;}
+	.Foliage_GS{fill:#FFE501;}
+	.Pompadour_GS{fill-rule:evenodd;clip-rule:evenodd;fill:#5BA4CC;}
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FEFEFE;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#F0047F;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0.7071" y2="0.7071">
+	<stop  offset="0" style="stop-color:#E1DFDF"/>
+	<stop  offset="0.1638" style="stop-color:#DDDBDB"/>
+	<stop  offset="0.3317" style="stop-color:#D1CFCF"/>
+	<stop  offset="0.5016" style="stop-color:#BCBABA"/>
+	<stop  offset="0.6727" style="stop-color:#A09D9D"/>
+	<stop  offset="0.8432" style="stop-color:#7B7979"/>
+	<stop  offset="1" style="stop-color:#535050"/>
+</linearGradient>
+<path class="st0" d="M69.3,99L43,53.4c20.6,0,32,0,52.6,0L69.3,99"/>
+<polygon class="st0" points="59.8,39.3 65.4,48.9 43.2,48.9 54.3,29.7 "/>
+<path class="st0" d="M39.2,46.8L13,1.5h52.4C55.1,19.3,49.5,29,39.2,46.8z"/>
+<polygon class="st0" points="58.3,22.9 69.3,3.8 80.3,22.9 69.3,22.9 "/>
+<polygon class="st1" points="58.2,27.4 69.3,27.4 80.4,27.4 74.8,37 74.8,37 69.3,46.6 63.7,37 "/>
+<polygon class="st0" points="78.8,39.3 84.3,29.7 95.3,48.9 73.2,48.9 78.8,39.3 "/>
+<path class="st0" d="M129.4,99l-26.3-45.6c20.6,0,32,0,52.6,0L129.4,99"/>
+<polygon class="st0" points="120,39.3 125.5,48.9 103.4,48.9 114.4,29.7 "/>
+<path class="st0" d="M99.3,46.8L73.1,1.5h52.4C115.2,19.3,109.6,29,99.3,46.8z"/>
+<polygon class="st0" points="118.4,22.9 129.4,3.8 140.5,22.9 129.4,22.9 "/>
+<polygon class="st1" points="118.3,27.4 129.4,27.4 140.5,27.4 135,37 135,37 129.4,46.6 123.9,37 "/>
+<polygon class="st0" points="138.9,39.3 144.4,29.7 155.5,48.9 133.4,48.9 138.9,39.3 "/>
+<path class="st0" d="M159.5,46.9C149.2,29,143.6,19.3,133.4,1.5h52.4L159.5,46.9z"/>
+</svg>

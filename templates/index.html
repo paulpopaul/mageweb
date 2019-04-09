@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        {% load staticfiles %}
+        {% load static %}
+        <meta charset="UTF-8">
+        <title>Mage's - Indie Rock</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="{% static 'js/player/jquery.js' %}"></script>
+
+        <link rel="stylesheet" href="{% static 'css/player/app.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'css/ultimate.css' %}">
+        <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+        <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+        <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+        <script src="{% static 'js/player/foundation.js' %}"></script>
+        <script src="{% static 'js/player/amplitude.js' %}"></script>
+        <script src="{% static 'js/player/functions.js' %}"></script>
+
+
+    </head>
+    <body>
+        <header>
+            <!--Menú Nav-->
+            <nav id="navbar-example2" class="navbar navbar-expand-lg mb-4 top-bar sps sps--abv">
+                <nav class="nav-bar-box">
+                    <img class="nav-bar-logo" src={% static 'img/logo/logo.svg' %}>
+                </nav>
+                <div class="container">
+                     <!--Menú Nav Móvil-->
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarCollapse1">
+                        <ul class="navbar-nav mx-auto ">
+                            <li class="nav-item active"><a class="nav-link" href="#">INICIO</a></li>
+                            <li class="nav-item "><a class="nav-link " href="#bio">BIOGRAFÍA</a></li>
+                            <li class="nav-item "><a class="nav-link " href="">MÚSICA</a></li>
+                            <li class="nav-item "><a class="nav-link " href="">VÍDEOS</a></li>
+                            <li class="nav-item "><a class="nav-link " href="">EVENTOS</a></li>
+                            <li class="nav-item "><a class="nav-link " href="">TIENDA</a></li>
+                            <li class="nav-item "><a class="nav-link " href="">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="carouselExampleIndicators" class="carousel fade" data-ride="carousel" data-interval="3000" data-pause="false">
+                <ol class="carousel-indicators">
+                    <div class="container">
+                        <div class="row">
+                            <!--Tipografía Mage's-->
+                            <div class="col-12 font-box-mage">
+                                <h6 class="font-mage">Mage's</h6>
+                            </div>
+                             <!--Género Musical-->
+                            <div class="col-12 genero-box-mage">
+                                <h6 class="genero-pop-mage">- </h6>
+                                <h6 class="genero-rock-mage">Rock</h6>
+                                <h6 class="genero-pop-mage">Pop</h6>
+                                <h6 class="genero-pop-mage"> -</h6>
+                            </div>
+                            <div class="col-12 social-box-mage">
+                                <div class="icons ">
+                                    <span class="fa fa-facebook fa-1x"></span>
+                                    <span class="fa fa-twitter fa-1x"></span>
+                                    <span class="fa fa-youtube-play fa-1x"></span>
+                                    <span class="fa fa-instagram fa-1x"></span>
+                                    <span class="fa fa-soundcloud fa-1x"></span>
+                                    <span class="fa fa-apple fa-1x"></span>
+                                    <span class="fa fa-spotify fa-1x"></span>
+                                </div>
+                            </div>
+                            <!--Scroll Down-->
+                            <div class="col-12 scroll-box-mage">
+                                <div class="scroll-down"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <!--Slide-->
+                    <div class="carousel-item maxwidthcarousel active" style="background-image: url('/static/img/slide/slide1.jpg')">
+                        <div class="carousel-caption d-md-block">
+                        </div>
+                    </div>
+                    <!--Slide-->
+                    <div class="carousel-item  maxwidthcarousel" style="background-image: url('/static/img/slide/slide2.jpg')">
+                        <div class="carousel-caption d-md-block">
+                        </div>
+                    </div>
+                    <!--Slide-->
+                    <div class="carousel-item maxwidthcarousel" style="background-image: url('/static/img/slide/slide1.jpg')">
+                        <div class="carousel-caption d-md-block">
+                        </div>
+                    </div>
+                </div>
+                <!--Control Izquierda-->
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <!--Control Derecha-->
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="colmd-12 col-12 box-evento-titulo">
+                    <h6 class="header-evento">Próximos Shows</h6>
+                    <h6 class="header-descripcion">Sigue nuestros increibles shows</h6>
+                </div>
+            </div>
+            <hr class="separador-evento">
+            <div class="row box-evento">
+                <div class="col-md-12 col-12">
+                    <div class="row">
+                        <div class="col-md-1 col-1 box-fecha-evento">
+                            <h6 class="dia-fecha-evento">26</h6>
+                            <h6 class="mes-fecha-evento">FEB</h6>
+                        </div>
+                        <div class="col-md-1b col-1b box-imagen-evento ">
+                            <img  class="img-evento " src={% static 'img/eventos/01.jpg' %}>
+                        </div>
+                        <div class="col-md-4 col-4 box-nombre-evento">
+                            <h6 class="nombre-evento">Rock Fest</h6>
+                            <h6 class="descripcion-evento">Festival de Bandas Locales</h6>
+                        </div>
+                        <div class="col-md-3 col-3 box-ubicacion-evento">
+                            <span class="icono-ubicacion-evento fa fa-map-marker fa-1x"></span>
+                            <h6 class="text-ubicacion-evento">Teatro Lord Cochrane</h6>
+                        </div>
+                        <div class="col-md-1 col-1 box-horario-evento">
+                            <span class="icono-ubicacion-evento fa fa-clock-o fa-1x"></span>
+                            <h6 class="text-ubicacion-evento">7:30pm</h6>
+                        </div>
+                        <div class="col-md-1 col-1 box-enlaces-evento">
+                            <a href="" class="btn btn-evento ">Ver Evento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="separador-evento">
+            <div class="row box-evento">
+                <div class="col-md-12 col-12">
+                    <div class="row">
+                        <div class="col-md-1 col-1 box-fecha-evento">
+                            <h6 class="dia-fecha-evento">26</h6>
+                            <h6 class="mes-fecha-evento">FEB</h6>
+                        </div>
+                        <div class="col-md-1b col-1b box-imagen-evento ">
+                            <img  class="img-evento " src={% static 'img/eventos/04.jpg' %}>
+                        </div>
+                        <div class="col-md-4 col-4 box-nombre-evento">
+                            <h6 class="nombre-evento">Rock Fest</h6>
+                            <h6 class="descripcion-evento">Festival de Bandas Locales</h6>
+                        </div>
+                        <div class="col-md-3 col-3 box-ubicacion-evento">
+                            <span class="icono-ubicacion-evento fa fa-map-marker fa-1x"></span>
+                            <h6 class="text-ubicacion-evento">Teatro Lord Cochrane</h6>
+                        </div>
+                        <div class="col-md-1 col-1 box-horario-evento">
+                            <span class="icono-ubicacion-evento fa fa-clock-o fa-1x"></span>
+                            <h6 class="text-ubicacion-evento">7:30pm</h6>
+                        </div>
+                        <div class="col-md-1 col-1 box-enlaces-evento">
+                            <a href="" class="btn btn-evento ">Ver Evento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="separador-evento">
+            <div class="row box-evento">
+                <div class="col-md-12 col-12">
+                    <div class="row">
+                        <div class="col-md-1 col-1 box-fecha-evento">
+                            <h6 class="dia-fecha-evento">26</h6>
+                            <h6 class="mes-fecha-evento">FEB</h6>
+                        </div>
+                        <div class="col-md-1b col-1b box-imagen-evento ">
+                            <img  class="img-evento " src={% static 'img/eventos/02.jpg' %}>
+                        </div>
+                        <div class="col-md-4 col-4 box-nombre-evento">
+                            <h6 class="nombre-evento">Rock Fest</h6>
+                            <h6 class="descripcion-evento">Festival de Bandas Locales</h6>
+                        </div>
+                        <div class="col-md-3 col-3 box-ubicacion-evento">
+                            <span class="icono-ubicacion-evento fa fa-map-marker fa-1x"></span>
+                            <h6 class="text-ubicacion-evento">Teatro Lord Cochrane</h6>
+                        </div>
+                        <div class="col-md-1 col-1 box-horario-evento">
+                            <span class="icono-ubicacion-evento fa fa-clock-o fa-1x"></span>
+                            <h6 class="text-ubicacion-evento">7:30pm</h6>
+                        </div>
+                        <div class="col-md-1 col-1 box-enlaces-evento">
+                            <a href="" class="btn btn-evento ">Ver Evento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="separador-evento">
+            <div class="row box-evento ">
+                <div class="col-md-12 col-12">
+                    <div class="row">
+                        <div class="col-md-1 col-1 box-fecha-evento">
+                            <h6 class="dia-fecha-evento">26</h6>
+                            <h6 class="mes-fecha-evento">FEB</h6>
+                        </div>
+                        <div class="col-md-1b col-1b box-imagen-evento ">
+                            <img  class="img-evento " src={% static 'img/eventos/03.jpg' %}>
+                        </div>
+                        <div class="col-md-4 col-4 box-nombre-evento">
+                            <h6 class="nombre-evento">Rock Fest</h6>
+                            <h6 class="descripcion-evento">Festival de Bandas Locales</h6>
+                        </div>
+                        <div class="col-md-3 col-3 box-ubicacion-evento">
+                            <span class="icono-ubicacion-evento fa fa-map-marker fa-1x"></span>
+                            <h6 class="text-ubicacion-evento">Teatro Lord Cochrane</h6>
+                        </div>
+                        <div class="col-md-1 col-1 box-horario-evento">
+                            <span class="icono-ubicacion-evento fa fa-clock-o fa-1x"></span>
+                            <h6 class="text-ubicacion-evento">7:30pm</h6>
+                        </div>
+                        <div class="col-md-1 col-1 box-enlaces-evento">
+                            <a href="" class="btn btn-evento-cancelado ">Cancelado</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="separador-evento">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 enlace-evento-box">
+                    <a href="#" class="enlace-evento-vertodo">Ver todos los Shows <span class="fa fa-long-arrow-right fa-1x"></span></a>
+                </div>
+            </div>
+            <hr class="separador-evento">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 nuestra-musica-box">
+                    <h6 class="nuestra-musica-header">Nuestra Música</h6>
+                    <h6 class="nuestra-musica-descripcion">Descubre nuestro nuevo álbum ó single</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="blue-playlist-container">
+            <div class="col-md-12 col-12" id="amplitude-player">
+                <div class="row">
+
+                    <div class="col-md-6 col-12 amplitude-box" id="amplitude-left">
+                        <img amplitude-song-info="cover_art_url" amplitude-main-song-info="true"/>
+                        <div id="player-left-bottom">
+                            <div id="time-container">
+                                <span class="current-time"><span class="amplitude-current-minutes" amplitude-main-current-minutes="true"></span>:<span class="amplitude-current-seconds" amplitude-main-current-seconds="true"></span></span>
+                                <div id="progress-container">
+                                    <input type="range" class="amplitude-song-slider" amplitude-main-song-slider="true" />
+                                    <progress id="song-played-progress" class="amplitude-song-played-progress" amplitude-main-song-played-progress="true"></progress>
+                                    <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+                                </div>
+                                <span class="duration">
+                                <span class="amplitude-duration-minutes" amplitude-main-duration-minutes="true"></span>:<span class="amplitude-duration-seconds" amplitude-main-duration-seconds="true"></span></span>
+                            </div>
+                            <div id="control-container">
+                                <div id="repeat-container">
+                                    <div class="amplitude-repeat" id="repeat"></div>
+                                    <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+                                </div>
+                                <div id="central-control-container">
+                                    <div id="central-controls">
+                                        <div class="amplitude-prev" id="previous"></div>
+                                        <div class="amplitude-play-pause" amplitude-main-play-pause="true" id="play-pause"></div>
+                                        <div class="amplitude-next" id="next"></div>
+                                    </div>
+                                </div>
+                                <div id="volume-container">
+                                    <div class="volume-controls">
+                                        <div class="amplitude-mute amplitude-not-muted"></div>
+                                        <input type="range" class="amplitude-volume-slider"/>
+                                        <div class="ms-range-fix"></div>
+                                    </div>
+                                    <span class="amplitude-playback-speed" ></span>
+                                    <div class="amplitude-shuffle amplitude-shuffle-off " id="shuffle-right"></div>
+                                </div>
+                            </div>
+                            <div id="meta-container">
+                                <span amplitude-song-info="name" amplitude-main-song-info="true" class="song-name p-2"></span>
+                                <div class="song-artist-album">
+                                    <span amplitude-song-info="artist" amplitude-main-song-info="true"></span>
+                                    <span amplitude-song-info="album" amplitude-main-song-info="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-12 pb-4" id="amplitude-right">
+                        <!-- Track -->
+                        <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="0">
+                            <div class="song-now-playing-icon-container">
+                                <div class="play-button-container"></div>
+                                <img class="now-playing" src={% static 'img/player/now-playing.svg' %}>
+                            </div>
+                            <div class="song-meta-data">
+                                <span class="song-title">Volar</span>
+                                <span class="song-artist">Mage's</span>
+                            </div>
+                            <div class="bandcamp-link ">
+                                <a href="http://www.soundcloud.com" target="_blank" title="Soundcloud" class="bandcamp-grey fa fa-soundcloud fa-1x social2"></a>
+                                <a href="http://www.applemusic.com" target="_blank" title="Apple Music" class="bandcamp-grey fa fa-apple fa-1x social2"></a>
+                                <a href="http://www.spotify.com" target="_blank" title="Spotify" class="bandcamp-grey fa fa-spotify fa-1x social2"></a>
+                                <a href="mailto:contacto@mages.cl" target="_blank" title="Apple Music" class="bandcamp-grey fa fa-shopping-cart fa-1x social2"></a>
+                            </div>
+                            <span class="song-duration">04:43</span>
+                        </div>
+
+                        <!-- Track -->
+                        <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="1">
+                            <div class="song-now-playing-icon-container">
+                                <div class="play-button-container"></div>
+                                <img class="now-playing" src={% static 'img/player/now-playing.svg' %}>
+                            </div>
+                            <div class="song-meta-data">
+                                <span class="song-title">Preocupado por un Sueño</span>
+                                <span class="song-artist">Mage's</span>
+                            </div>
+                            <div class="bandcamp-link">
+                                 <a href="http://www.soundcloud.com" target="_blank" title="Soundcloud" class="bandcamp-grey fa fa-soundcloud fa-1x social2"></a>
+                                <a href="http://www.applemusic.com" target="_blank" title="Apple Music" class="bandcamp-grey fa fa-apple fa-1x social2"></a>
+                                <a href="http://www.spotify.com" target="_blank" title="Spotify" class="bandcamp-grey fa fa-spotify fa-1x social2"></a>
+                                <a href="mailto:contacto@mages.cl" target="_blank" title="Apple Music" class="bandcamp-grey fa fa-shopping-cart fa-1x social2"></a>
+                            </div>
+                            <span class="song-duration ">03:34</span>
+                        </div>
+
+                        <!-- Track -->
+                        <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="2">
+                            <div class="song-now-playing-icon-container">
+                                <div class="play-button-container"></div>
+                                <img class="now-playing" src={% static 'img/player/now-playing.svg' %}>
+                            </div>
+                            <div class="song-meta-data">
+                                <span class="song-title">Amigos</span>
+                                <span class="song-artist">Mage's</span>
+                            </div>
+                            <div class="bandcamp-link">
+                                 <a href="http://www.soundcloud.com" target="_blank" title="Soundcloud" class="bandcamp-grey fa fa-soundcloud fa-1x social2"></a>
+                                <a href="http://www.applemusic.com" target="_blank" title="Apple Music" class="bandcamp-grey fa fa-apple fa-1x social2"></a>
+                                <a href="http://www.spotify.com" target="_blank" title="Spotify" class="bandcamp-grey fa fa-spotify fa-1x social2"></a>
+                                <a href="mailto:contacto@mages.cl" target="_blank" title="Apple Music" class="bandcamp-grey fa fa-shopping-cart fa-1x social2"></a>
+                            </div>
+                            <span class="song-duration ">03:32</span>
+                        </div>
+
+                        <!-- Track -->
+                        <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="3">
+                            <div class="song-now-playing-icon-container">
+                                <div class="play-button-container"></div>
+                                <img class="now-playing" src={% static 'img/player/now-playing.svg' %}>
+                            </div>
+                            <div class="song-meta-data">
+                                <span class="song-title">Fucking Love</span>
+                                <span class="song-artist">Mage's</span>
+                            </div>
+                            <div class="bandcamp-link">
+                                 <a href="http://www.soundcloud.com" target="_blank" title="Soundcloud" class="bandcamp-grey fa fa-soundcloud fa-1x social2"></a>
+                                <a href="http://www.applemusic.com" target="_blank" title="Apple Music" class="bandcamp-grey fa fa-apple fa-1x social2"></a>
+                                <a href="http://www.spotify.com" target="_blank" title="Spotify" class="bandcamp-grey fa fa-spotify fa-1x social2"></a>
+                                <a href="mailto:contacto@mages.cl" target="_blank" title="Apple Music" class="bandcamp-grey fa fa-shopping-cart fa-1x social2"></a>
+                            </div>
+                            <span class="song-duration ">04:56</span>
+                        </div>
+
+                        <!-- Track -->
+                        <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="4">
+                            <div class="song-now-playing-icon-container">
+                                <div class="play-button-container"></div>
+                                <img class="now-playing" src={% static 'img/player/now-playing.svg' %}>
+                            </div>
+                            <div class="song-meta-data">
+                                <span class="song-title">Solo Vive</span>
+                                <span class="song-artist">Mage's</span>
+                            </div>
+                            <div class="bandcamp-link">
+                                 <a href="http://www.soundcloud.com" target="_blank" title="Soundcloud" class="bandcamp-grey fa fa-soundcloud fa-1x social2"></a>
+                                <a href="http://www.applemusic.com" target="_blank" title="Apple Music" class="bandcamp-grey fa fa-apple fa-1x social2"></a>
+                                <a href="http://www.spotify.com" target="_blank" title="Spotify" class="bandcamp-grey fa fa-spotify fa-1x social2"></a>
+                                <a href="mailto:contacto@mages.cl" target="_blank" title="Apple Music" class="bandcamp-grey fa fa-shopping-cart fa-1x social2"></a>
+                            </div>
+                            <span class="song-duration ">04:44</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container ">
+            <section>
+                <!--Biografía-->
+                <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="container  " >
+                    <div class="row">
+                        <div class="col-md-6 col-12 bio-slide-box">
+                            <div class="owl-carousel probootstrap-owl">
+                                <div class="item"><img class="img-fluid" src={% static 'img/slidebio/slide-bio.jpg' %}></div>
+                                <div class="item"><img class="img-fluid" src={% static 'img/slidebio/slide-bio.jpg' %}></div>
+                                <div class="item"><img class="img-fluid" src={% static 'img/slidebio/slide-bio.jpg' %}></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 bio-header-box" id="bio">
+                            <h6 class="bio-about">Sobre Nosotros</h6>
+                        {% for biografia in object_list %}
+                            <!--<h6 class="bio-header"><a href="/biografia/{{ biografia.slug }}/">{{ biografia.titulo }}</a></h6>-->
+                            <h6 class="bio-header">{{ biografia.titulo }}</h6>
+                            <h6 class="bio-content">{{ biografia.contenido }}</h6>
+                            <h6 class="bio-influencia">{{ biografia.titulo_dos }}</h6>
+                            <h6 class="bio-content">{{ biografia.contenido_dos }}</h6>
+
+                        {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <hr class="separador-evento">
+            <div class="container perfil-box">
+                <div class="perfil-card-box">
+                    <h6 class="perfil-instrumento">BAJO</h6>
+                    <img class="img-fluid rounded-circle" src={% static 'img/perfil/andres01.jpg' %}>
+                    <div class="perfil-content-box">
+                        <div class="perfil-content-box-dos">
+                            <h6 class="perfil-nombre">ANDRES</h6>
+                            <h6 class="perfil-apellido">KUNZ</h6>
+                            <div class="social-box-periles">
+                                <div class="icon-perfiles ">
+                                    <span class="fa fa-facebook fa-1x"></span>
+                                    <span class="fa fa-twitter fa-1x"></span>
+                                    <span class="fa fa-youtube-play fa-1x"></span>
+                                    <span class="fa fa-instagram fa-1x"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="perfil-card-box">
+                    <h6 class="perfil-instrumento">VOZ / GUITARRA</h6>
+                    <img class="img-fluid rounded-circle" src={% static 'img/perfil/harold01.jpg' %}>
+                    <div class="perfil-content-box">
+                        <div class="perfil-content-box-dos">
+                            <h6 class="perfil-nombre">HAROLD</h6>
+                            <h6 class="perfil-apellido">MAGE</h6>
+                            <div class="social-box-periles">
+                                <div class="icon-perfiles">
+                                    <span class="fa fa-facebook fa-1x"></span>
+                                    <span class="fa fa-twitter fa-1x"></span>
+                                    <span class="fa fa-youtube-play fa-1x"></span>
+                                    <span class="fa fa-instagram fa-1x"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="perfil-card-box">
+                    <h6 class="perfil-instrumento">BATERIA</h6>
+                    <img class="img-fluid rounded-circle" src={% static 'img/perfil/paul01.jpg' %}>
+                    <div class="perfil-content-box">
+                        <div class="perfil-content-box-dos">
+                            <h6 class="perfil-nombre">PAUL</h6>
+                            <h6 class="perfil-apellido">PINEDA</h6>
+                            <div class="social-box-periles">
+                                <div class="icon-perfiles">
+                                    <span class="fa fa-facebook fa-1x"></span>
+                                    <span class="fa fa-twitter fa-1x"></span>
+                                    <span class="fa fa-youtube-play fa-1x"></span>
+                                    <span class="fa fa-instagram fa-1x"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="perfil-card-box">
+                    <h6 class="perfil-instrumento">GUITARRA</h6>
+                    <img class="img-fluid rounded-circle" src={% static 'img/perfil/antonio01.jpg' %}>
+                    <div class="perfil-content-box">
+                        <div class="perfil-content-box-dos">
+                            <h6 class="perfil-nombre">ANTONIO</h6>
+                            <h6 class="perfil-apellido">MARTEL</h6>
+                            <div class="social-box-periles">
+                                <div class="icon-perfiles">
+                                    <span class="fa fa-facebook fa-1x"></span>
+                                    <span class="fa fa-twitter fa-1x"></span>
+                                    <span class="fa fa-youtube-play fa-1x"></span>
+                                    <span class="fa fa-instagram fa-1x"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="perfil-card-box">
+                    <h6 class="perfil-instrumento">GUITARRA</h6>
+                    <img class="img-fluid rounded-circle" src={% static 'img/perfil/cristian01.jpg' %}>
+                    <div class="perfil-content-box">
+                        <div class="perfil-content-box-dos">
+                            <h6 class="perfil-nombre">CRISTIAN</h6>
+                            <h6 class="perfil-apellido">THON</h6>
+                            <div class="social-box-periles">
+                                <div class="icon-perfiles">
+                                    <span class="fa fa-snapchat-ghost fa-1x"></span>
+                                    <span class="fa fa-twitter fa-1x"></span>
+                                    <span class="fa fa-youtube-play fa-1x"></span>
+                                    <span class="fa fa-instagram fa-1x"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="separador-evento">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 nuestra-musica-box">
+                    <h6 class="nuestra-musica-header">Videos</h6>
+                    <h6 class="nuestra-musica-descripcion">Instancias creativas, arte y difusión</h6>
+
+                </div>
+            </div>
+        </div>
+        <section  id="section1">
+            <svg width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+                <path  d="M0 0 L50 90 L100 0 V100 H0" fill="#0a0c2c" />
+            </svg>
+        </section>
+        <div class="container-fluid video-box-container">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-4 col-6 video-box-container video-box-margin">
+                <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TBJUAALCpTI?showinfo=0" allowfullscreen></iframe>
+                </div>
+                </div>
+                <div class="col-md-4 col-6  video-box-container video-box-margin">
+                <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ssqMYr1eYxw?showinfo=0" allowfullscreen></iframe>
+                </div>
+                </div>
+                <div class="col-md-4 col-6 video-box-container video-box-margin">
+                <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XTB_jvR-2b4?showinfo=0" allowfullscreen></iframe>
+                </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+        <section  id="section2">
+            <svg width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+                <path  d="M0 0 L50 90 L100 0 V100 H0" fill="#06062a" />
+            </svg>
+        </section>
+
+
+        <div class="container single-page-header " id="single-page-header">
+            <div class="row">
+                <div class="col-12 ">
+                    <h6 class=""><span class="fa fa-quote-left fa-1x"></span></h6>
+                    <h6 class="">Instancias creativas, arte y difusión</h6>
+                </div>
+            </div>
+            <div class="testimonials owl-carousel ">
+                <div class="testimonials-single">
+                    <h6 class="">" Hace poco tuve la oportunidad de verlos en vivo y nada que decir, me encantó su música!, sigan así "</h6>
+                    <h6 class="">Sofía</h6>
+                    <h6 class="">@sofia_malova</h6>
+                </div>
+                <div class="testimonials-single">
+                    <h6 class="">" Hace poco tuve la oportunidad de verlos en vivo y nada que decir, me encantó su música!, sigan así "</h6>
+                    <h6 class="">Sofía</h6>
+                    <h6 class="">@sofia_malova</h6>
+                </div>
+                <div class="testimonials-single">
+                    <h6 class="">" Hace poco tuve la oportunidad de verlos en vivo y nada que decir, me encantó su música!, sigan así "</h6>
+                    <h6 class="">Sofía</h6>
+                    <h6 class="">@sofia_malova</h6>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script type="text/javascript">
+	$('.owl-carousel').owlCarousel({
+		loop: true,
+		margin: 10,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+		nav: true,
+		stagePadding: 5,
+		navText: ['<span class="icon-chevron-left">', '<span class="icon-chevron-right">'],
+		responsive:{
+			0:{
+				items: 1
+			},
+			600:{
+				items: 1
+			},
+			1000:{
+				items: 1
+			}
+		}
+	});
+
+    </script>
+    <script>
+        $(function() {
+            "use strict";
+            var $testimonialsDiv = $('.testimonials');
+            if ($testimonialsDiv.length && $.fn.owlCarousel) {
+                $testimonialsDiv.owlCarousel({
+                    items: 3,
+                    nav: true,
+                    dots: true,
+                    navText: ['<span class="ti-arrow-left"></span>', '<span class="ti-arrow-right"></span>'],
+                    responsive:{
+                    0:{
+                        items: 1
+                    },
+                    600:{
+                        items: 1
+                    },
+                    1000:{
+                        items: 1
+                    }
+                }
+
+                });
+            }
+
+        }); /* End Fn */
+    </script>
+    <script type="text/javascript">
+
+        Amplitude.init({
+        "bindings": {
+          37: 'prev',
+          39: 'next',
+          32: 'play_pause'
+        },
+        "songs": [
+            {
+                "name": "Volar",
+                "artist": "Mage's",
+                "album": "Sin Mirar Atrás",
+                "url": "https://soundcloud.com/magesoficial-1/mages-volar",
+                "cover_art_url": "../../static/img/cd/magecd.jpg"
+            },
+                        {
+                "name": "Preocupado por un Sueño",
+                "artist": "Mage's",
+                "album": "Sin Mirar Atras",
+                "url": "https://soundcloud.com/magesoficial-1/mages-preocupado-por-un-sue-o",
+                "cover_art_url": "../../static/img/cd/magecd.jpg"
+            },
+                        {
+                "name": "Amigos",
+                "artist": "Mage's",
+                "album": "Sin Mirar Atras",
+                "url": "https://soundcloud.com/magesoficial-1/mages-amigos",
+                "cover_art_url": "../../static/img/cd/magecd.jpg"
+            },
+            {
+                "name": "Fucking Love",
+                "artist": "Mage's",
+                "album": "Sin Mirar Atras",
+                "url": "https://soundcloud.com/magesoficial-1/mages-fucking-love",
+                "cover_art_url": "../../static/img/cd/magecd.jpg"
+            },
+            {
+                "name": "Solo Vive",
+                "artist": "Mage's",
+                "album": "Sin Mirar Atrás",
+                "url": "https://soundcloud.com/magesoficial-1/mages-solo-vive",
+                "cover_art_url": "../../static/img/cd/magecd.jpg"
+            }
+        ],
+        "soundcloud_client": '7f4a6ed1488c1ebdf31600767b9b6350'
+        });
+
+          window.onkeydown = function(e) {
+      return !(e.keyCode == 32);
+    };
+    </script>
+</html>
